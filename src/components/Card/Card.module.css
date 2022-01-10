@@ -1,0 +1,47 @@
+.container {
+  box-shadow: 1px 1px 10px black;
+  margin: 10px;
+  width: 300px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+.button {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: none;
+  min-width: 5em;
+  border: 1px solid black;
+  background-color: transparent;
+  transition: 0.2s ease-out;
+}
+.button--liked {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  padding: 1em;
+}
+
+.content > * + * {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 550px) {
+  .container {
+    width: 500px;
+  }
+}
